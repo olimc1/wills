@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Create My Will | Peace of Mind Wills</title>
   <style>
     body {
@@ -22,55 +22,18 @@
       max-width: 800px;
       margin: 2rem auto;
       padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    label {
+      font-weight: bold;
+      margin-top: 1rem;
+      display: block;
     }
     input, select, textarea {
       display: block;
       width: 100%;
-      margin: 1rem 0;
+      margin: 0.5rem 0 1rem;
       padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      background: #0a3d62;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #073357;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Create Your Will</h1>
-    <p>Start the process in just a few easy steps.</p>
-  </header>
-
-  <div class="container">
-    <form action="#" method="post">
-      <label for="fullname">Full Name</label>
-      <input type="text" id="fullname" name="fullname" required>
-
-      <label for="dob">Date of Birth</label>
-      <input type="date" id="dob" name="dob" required>
-
-      <label for="executor">Executor's Full Name</label>
-      <input type="text" id="executor" name="executor" required>
-
-      <label for="beneficiaries">Beneficiaries (names and relationships)</label>
-      <textarea id="beneficiaries" name="beneficiaries" rows="4" required></textarea>
-
-      <label for="assets">Key Assets (property, savings, possessions)</label>
-      <textarea id="assets" name="assets" rows="3"></textarea>
-
-      <button type="submit">Generate My Will</button>
-    </form>
-  </div>
-
-</body>
-</html>
+      border: 1px
