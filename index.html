@@ -14,11 +14,23 @@
       line-height: 1.6;
     }
     header {
+      position: relative;
       background: url('https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=1350&q=80') 
                   no-repeat center center/cover;
       color: white;
       padding: 6rem 2rem;
       text-align: center;
+    }
+    /* Dark overlay for readability */
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    header h1, header p, header .btn {
+      position: relative;
+      z-index: 1;
     }
     header h1 {
       font-size: 3rem;
@@ -35,14 +47,16 @@
       display: inline-block;
       margin-top: 1.5rem;
       padding: 0.9rem 2rem;
-      background: #0a3d62;
-      color: white;
+      background: #f1c40f; /* gold */
+      color: #222;
       border-radius: 5px;
       text-decoration: none;
       font-size: 1.1rem;
+      font-weight: bold;
     }
     .btn:hover {
-      background: #073357;
+      background: #d4ac0d;
+      color: white;
     }
     .section {
       max-width: 900px;
@@ -100,34 +114,4 @@
       <div class="feature">
         <h3>Solicitor-Approved</h3>
         <p>
-          Our question system is designed by experienced solicitors to cover everything that matters.
-        </p>
-      </div>
-      <div class="feature">
-        <h3>AI Efficiency</h3>
-        <p>
-          Our smart platform adapts to your answers, saving time and asking only what’s relevant.
-        </p>
-      </div>
-      <div class="feature">
-        <h3>Affordable Peace of Mind</h3>
-        <p>
-          No hidden fees, no hourly rates — just a fair, transparent price for a secure will.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Start in Minutes</h2>
-    <p>
-      Answer the right questions. Avoid costly mistakes.  
-      Get your personalised will today — quickly, easily, and affordably.
-    </p>
-    <div style="text-align:center;">
-      <a href="create-my-will.html" class="btn">Start My Will</a>
-    </div>
-  </section>
-
-</body>
-</html>
+          Our question system is designed by experienced sol
